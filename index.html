@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h3>가보고 싶은 곳</h3><hr>
+    <form > 
+        <table>
+        <tr><td>나라 :</td> <td><input type="text" list="countries"></td>
+         <datalist id="countries">
+             <option value="가나">
+             <option value="스위스">
+             <option value="브라질">
+                 </option>
+         </datalist>
+        <tr><td>보고싶은것 :</td><td> <input type="text" list="what"></td>
+         <datalist id="what">
+             <option value="산">
+             <option value="바다">
+             <option value="도시">
+                 </option>
+         </datalist>
+        </table><hr>
+        <table>
+        <tr><td>검색 :</td><td> <input type="text" size="10" value="">
+                <input type="button" value="Q1">
+                <button type="button">Q2</button></td></tr>
+        <tr><td>submit버튼 :</td><td>  <input type="submit" value="전송1">
+                    <button type="submit">전송2</button></td></tr>
+        <tr><td>reset버튼 : </td><td> <input type="reset" value="리셋1">
+                    <button type="reset">리셋2</button></td></tr>
+        <tr><td>이미지 버튼 :</td> <td> <input type="image" src="button.jpg" alt="이미지 버튼" width="100" height="100">
+                    <button type="button">
+                        <img src="button.jpg" alt="이미지 버튼" width="100" height="100">
+                    </button> </tr></td></table>
+                <hr><h3>먹고싶은것 선택</h3><hr>
+                <form >
+        <table>
+                    <tr><td>짜장면</td> <td><input type="checkbox" value="1"></td>
+                    <tr><td>짬뽕  </td> <td> <input type="checkbox" value="2"></td>
+                    <tr><td>탕수육</td> <td><input type="checkbox" value="3"></td>
+                    </tr>
+        </table></form>
+        <table>
+        <label> 
+            <tr><td><input type="radio" name="china" value="1">
+            짜장면 <img src="jj.jpg" alt="짜장면" width="100" height="100"></td></tr>
+        </label>
+        <label>
+            <tr><td><input type="radio" name="china" value="2">
+            짬뽕 <img src="jbjb.jpg" alt="짬뽕" width="100" height="100"></td></tr>
+        </label>
+        <label>
+            <tr><td><input type="radio" name="china" value="1">
+            탕수육 <img src="tsts.jpg" alt="탕수육" width="100" height="100"></td></tr>
+        </label></table>
+                    <hr><h3>오늘의 점심은?</h3><hr>
+                    <select name="china" >
+            <option value="1">짜장면
+            <option value="2">짬뽕
+            <option value="3">탕수육
+               </select>
+               <h3>로그인 폼</h3>
+               <hr>
+               <form name="fo" method="get">
+                   <table>
+                   <tr><td><label>사용자 ID : <input type="text" size="15" value=""></label></td>
+                   <tr><td><label for="pass">비밀 번호 :</label>
+                   <input id="pass" type="password" size="15" value=""> </td>
+                   <tr><td><input type="submit" value="완료"></td>
+                   </tr>
+                   </table>
+               </form>
+        <hr><h3>컬러다이얼로그 색 입력</h3><hr>
+                        색 선택 <input type="color" value="#00BFF"
+                        onchange="document.body.style.color=this.value">
+        <hr><h3>시간 정보 입력</h3>
+        초기 세팅 : 2016년 9월 1일 밤9시 30분 (10초 32)
+        <hr>
+        <table>
+           <tr><td> month :</td><td><input type="month" value="2016-09"></td></tr>
+           <tr><td> week  :</td><td><input type="week " value="2016-W36"></td></tr>
+           <tr><td> data  :</td><td><input type="date" value="2016-09-01"></td></tr>
+           <tr><td> time  :</td><td> <input type="time" value="21:30"></td></tr>
+           <tr><td> local :</td><td> <input type="datetime-local" value="2016-09-01T21:30:10.32"></td></tr>
+           <tr><td>지속시간(0.0~10.0시간) :</td><td> <input type="number" min="0.0" max="10.0" step="0.5"></td></tr>
+           <tr><td> 온도 설정 :</td><td>10&deg; <input type="range" min="10" max="30" list="temperatures">30&deg;</td></tr>
+           <datalist id="temperatures">
+            <option value="12" label="low">
+            <option value="20" label="medium">
+            <option value="28" label="high">
+           </datalist>
+        </table>
+        <h3>생일축하합니다.</h3>
+        <hr>당신의 생일은 2001년 04월 10일 입니다. 틀리면 수정하시고 
+        파티 시간과 장소를 입력하세요. <hr>
+        <table>
+            <tr>
+                <td>생일</td>
+                <td><input type="date" value="2001-04-10"></td></tr>
+            <tr>
+                <td>생일파티 시간</td>
+                <td><input type="time"></td></tr>
+            <tr>
+                <td>생일</td>
+                <td><input type="text"></td></tr>   
+                     
+        </table>
+                </form>
+
+                
+</body>
+</html>
